@@ -18,7 +18,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
@@ -44,7 +45,25 @@ audio.play()
   </section>
   <section class="slider" id="tab-shop">
     <h1 onclick="audioPlay()">SHOP</h1>
-    <h2>a query language for APIs</h2>
+    <div id="app" class="container">
+
+  <card data-image="./cards/minecraft.jpg">
+    <h1 slot="header">Minecraft</h1>
+    <p slot="content">Minecraft Accounts</p>
+  </card>
+  <card data-image="./cards/minecraft.jpg">
+    <h1 slot="header">Minecraft</h1>
+    <p slot="content">Minecraft Accounts</p>
+  </card>
+  <card data-image="./cards/minecraft.jpg">
+    <h1 slot="header">Minecraft</h1>
+    <p slot="content">Minecraft Accounts</p>
+  </card>
+  <card data-image="./cards/minecraft.jpg">
+    <h1 slot="header">Minecraft</h1>
+    <p slot="content">Minecraft Accounts</p>
+  </card>
+</div>
   </section>
   <section class="slider" id="tab-dev">
     <h1 onclick="audioPlay()">Dev Team</h1>
@@ -52,7 +71,7 @@ audio.play()
   </section>
 </main>
 <canvas class="background"></canvas>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./vue.js"></script>
 </body>
 </html>
