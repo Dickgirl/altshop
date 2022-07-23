@@ -37,14 +37,14 @@ Vue.component('card', {
     },
     cardStyle() {
       const rX = this.mousePX * 30;
-      const rY = this.mousePY * -5;
+      const rY = this.mousePY * 0;
       return {
         transform: `rotateY(${rX}deg) rotateX(${rY}deg)` };
 
     },
     cardBgTransform() {
-      const tX = this.mousePX * -30;
-      const tY = this.mousePY * 5;
+      const tX = this.mousePX * 30;
+      const tY = this.mousePY * -5;
       return {
         transform: `translateX(${tX}px) translateY(${tY}px)` };
 

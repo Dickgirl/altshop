@@ -29,6 +29,12 @@ var audio = document.getElementById("audio");
 audio.volume = 0.4;
 audio.play()
 }
+
+function buy() {
+var audio = document.getElementById("audio");
+audio.volume = 0.4;
+audio.play()
+}
 </script>
 <audio loop="" preload="auto" id="audio">
 <source src="music.mp3" type="audio/mp3">
@@ -36,19 +42,108 @@ audio.play()
 <sectio class="nav">
   <h1 onclick="audioPlay()">ALTBAY</h1>
   <h3 class="span loader"><span class="m">T</span><span class="m">h</span><span class="m">e</span>&nbsp;<span class="m">B</span><span class="m">e</span><span class="m">s</span><span class="m">t</span>&nbsp;<span class="m">A</span><span class="m">l</span><span class="m">t</span>&nbsp;<span class="m">S</span><span class="m">h</span><span class="m">o</span><span class="m">p</span></h3>
-  <div class="nav-container"><a onclick="audioPlay()" class="nav-tab" href="#tab-info">Info</a><a onclick="audioPlay()" class="nav-tab" href="#tab-shop">Shop</a><a onclick="audioPlay()" class="nav-tab" href="#tab-dev">Dev Team</a></div>
+  <div class="nav-container"><a onclick="audioPlay()" class="nav-tab" href="#tab-info">Info</a><a onclick="audioPlay()" class="nav-tab" href="#tab-Minecraft">Minecraft</a><a onclick="audioPlay()" class="nav-tab" href="#tab-stream">Stream</a><a onclick="audioPlay()" class="nav-tab" href="#tab-discord">Discord</a><a onclick="audioPlay()" class="nav-tab" href="#tab-dev">Team</a></div>
 </sectio>
 <main class="main">
   <section class="slider onclick="audioPlay()"" id="tab-info">
     <h1 onclick="audioPlay()">INFO</h1>
-    <h2>the best of both worlds...</h2>
   </section>
-  <section class="slider" id="tab-shop">
-    <h1 onclick="audioPlay()">SHOP</h1>
-    <div id="app" class="container">
-
+  <section class="slider" id="tab-Minecraft">
+    <h1 onclick="audioPlay()">Minecraft</h1>
+    <div class="wrapper">
+      <div class="cols">
+    			<div class="col" ontouchstart="this.classList.toggle('hover');" >
+    				<div class="container">
+    					<div class="front" style="background-image: url(./cards/minecraftcard.png)">
+    						<div class="inner">
+    							<p>Minecraft MFA (Banned)</p>
+                  <span>11$</span>
+    						</div>
+    					</div>
+    					<div class="back">
+    						<div class="inner" data-sellix-product="62dc6512efac0" type="submit" alt="Buy Now">
+    						  <p>Migrated Minecraft FA (Banned on hypixel)</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');" >
+    				<div class="container">
+    					<div class="front" style="background-image: url(./cards/minecraftcard.png)">
+    						<div class="inner">
+    							<p>Minecraft MFA  (Unbanned)</p>
+                  <span>9$</span>
+    						</div>
+    					</div>
+    					<div class="back">
+    						<div class="inner" data-sellix-product="62dc651f094be" type="submit" alt="Buy Now">
+    						  <p>Migrated Minecraft FA (Not banned on hypixel)</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+  </section>
+  <section class="slider" id="tab-discord">
+    <h1 onclick="audioPlay()">Discord</h1>
+    <div class="wrapper">
+      <div class="cols">
+    			<div class="col" ontouchstart="this.classList.toggle('hover');" >
+    				<div class="container">
+    					<div class="front" style="background-image: url(./cards/discordcard.jpg)">
+    						<div class="inner">
+    							<p>Discord 2015-2018</p>
+                  <span>2$</span>
+    						</div>
+    					</div>
+    					<div class="back">
+    						<div class="inner" data-sellix-product="62dc6a90dd985" type="submit" alt="Buy Now">
+    						  <p>Discord Account FA from 2015-2018</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+  </section>
+  <section class="slider" id="tab-stream">
+    <h1 onclick="audioPlay()">Stream</h1>
+    <div class="wrapper">
+      <div class="cols">
+    			<div class="col" ontouchstart="this.classList.toggle('hover');" >
+    				<div class="container">
+    					<div class="front" style="background-image: url(./cards/steamcard.jpg)">
+    						<div class="inner">
+    							<p>Steam 1-10 Games</p>
+                  <span>5$</span>
+    						</div>
+    					</div>
+    					<div class="back">
+    						<div class="inner" data-sellix-product="62dc6a4c9de60" type="submit" alt="Buy Now">
+    						  <p>Steam Email FA with 1-10 paid games</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');" >
+    				<div class="container">
+    					<div class="front" style="background-image: url(./cards/minecraftcard.png)">
+    						<div class="inner">
+    							<p>Minecraft MFA  (Unbanned)</p>
+                  <span>9$</span>
+    						</div>
+    					</div>
+    					<div class="back">
+    						<div class="inner" data-sellix-product="62dc651f094be" type="submit" alt="Buy Now">
+    						  <p>Migrated Minecraft FA (Not banned on hypixel)</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+  </section>
+  <section class="slider" id="tab-dev">
+    <h1 onclick="audioPlay()">Dev Team</h1>
+    <div id="app" class="container1">
   <card data-image="./cards/minecraft.jpg">
     <h1 slot="header">Minecraft</h1>
+    <p slot="content">Price: $15</p>
     <p slot="content">Minecraft Accounts</p>
   </card>
   <card data-image="./cards/minecraft.jpg">
@@ -65,13 +160,10 @@ audio.play()
   </card>
 </div>
   </section>
-  <section class="slider" id="tab-dev">
-    <h1 onclick="audioPlay()">Dev Team</h1>
-    <h2>framework for Production</h2>
-  </section>
 </main>
 <canvas class="background"></canvas>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./vue.js"></script>
+<script src="https://cdn.sellix.io/static/js/embed.js"></script>
 </body>
-</html>
+</html>v
